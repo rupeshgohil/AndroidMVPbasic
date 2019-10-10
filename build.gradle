@@ -21,6 +21,22 @@ allprojects {
         jcenter()
         
     }
+    project.ext {
+        isRelease = false
+        buildToolsVersion = "27.0.1" //String
+        supportLibraryVersion = "27.1.1" //String
+        sdp = "1.0.4" //String
+        minSdkVersion = 19 //Integer
+        targetSdkVersion = 26
+        compileSdkVersion = 26
+        okhttp = "3.8.1"
+        glide = "4.4.0"
+        retrofit ="2.4.0"
+        gson = "2.8.5"
+        retrofit2convertergson = "2.4.0"
+        okhttpinterceptor = "3.6.0"
+        hdodenhofcircleimageview = "2.2.0"
+    }
 }
 
 task clean(type: Delete) {
